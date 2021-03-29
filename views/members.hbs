@@ -1,0 +1,23 @@
+
+<!-- <LayoutSnippet> -->
+<h1 class="mb-3">Microsoft-Teams</h1>
+<a href="/teamMembers/newmember" class="btn btn-light btn-sm mb-3">ADD MEMBER</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Members of Teams</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each teamMembers}}
+     <tr>
+        <td>{{this.displayName}}
+          <br>
+                <a href= '/teamMembers/remove' class="btn btn-light btn-sm mb-3">Remove Member</a> 
+        </td>
+        
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<!-- </LayoutSnippet> -->

@@ -1,0 +1,16 @@
+<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT License. -->
+
+<form method="POST">
+  <div class="form-group">
+    <label>Display Name</label>
+    <input class="form-control" name="display-name" type="text" value="{{ newTeam.displayName }}">
+  </div>
+  <div class="form-group mb-3">
+    <label>Description</label>
+    <textarea class="form-control" name="tm-body" rows="3">{{ newTeam.body }}</textarea>
+  </div>
+  <input class="btn btn-primary mr-2" type="submit" value="Create" />
+  <a class="btn btn-secondary" href="/teams">Cancel</a>
+</form>
+

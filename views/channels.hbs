@@ -1,0 +1,21 @@
+<!-- <LayoutSnippet> -->
+<h1 class="mb-3">Microsoft-Teams</h1>
+<a href="/teams/newchannel" class="btn btn-light btn-sm mb-3">CREATE CHANNEL</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"> Channels List</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each channels}}
+     <tr>
+        <td>{{this.displayName}}
+             <br> <a href= '/teams/removeChannel' class="btn btn-light btn-sm mb-3">DELETE CHANNEL</a> 
+        </td>
+   
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<!-- </LayoutSnippet> -->
